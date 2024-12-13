@@ -1,0 +1,313 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: #fff;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #e50914;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+.navbar .user-profile img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.hero {
+    background-image: url('https://cdn.mos.cms.futurecdn.net/rDJegQJaCyGaYysj2g5XWY-650-80.jpg.webp');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.hero-content {
+    z-index: 2;
+}
+
+.cta-button {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #f40612;
+}
+
+.movie-row {
+    margin: 20px;
+}
+
+.movie-row h2 {
+    margin-bottom: 10px;
+}
+
+.movie-container {
+    display: flex;
+    overflow-x: scroll;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.movie img {
+    width: 150px;
+    height: 225px;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.movie img:hover {
+    transform: scale(1.1);
+}
+/* Reasons to Join Section */
+.reasons-to-join {
+    background-color: #141414;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.reasons-to-join h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.reason-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: linear-gradient(135deg, #2d2d2d, #1c1c1c);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 50px;
+    margin-top: 15px;
+}
+
+/* FAQ Section */
+.faq-section {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.faq-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.faq {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: #2d2d2d;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px 20px;
+    border-top: 1px solid #444;
+    color: #ddd;
+}
+
+.faq-question:hover {
+    background-color: #444;
+}
+
+.faq-question .toggle {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+/* Footer Styles */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-top {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.footer-top p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.email-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.email-form input {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border: 1px solid #333;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.email-form button {
+    background-color: #e50914;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.email-form button span {
+    margin-left: 5px;
+}
+
+.email-form button:hover {
+    background-color: #f6121d;
+}
+
+.footer-middle {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.footer-middle p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.language-selector button {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.language-selector button:hover {
+    background-color: #444;
+}
